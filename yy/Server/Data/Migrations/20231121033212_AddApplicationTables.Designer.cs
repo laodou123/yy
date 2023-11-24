@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using yy.Server.Data;
 
@@ -11,9 +12,11 @@ using yy.Server.Data;
 namespace yy.Server.Data.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    partial class ApplicationDbContextModelSnapshot : ModelSnapshot
+    [Migration("20231121033212_AddApplicationTables")]
+    partial class AddApplicationTables
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -438,26 +441,6 @@ namespace yy.Server.Data.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Colours");
-
-                    b.HasData(
-                        new
-                        {
-                            Id = 1,
-                            CreatedBy = "System",
-                            DateCreated = new DateTime(2023, 11, 24, 11, 2, 22, 920, DateTimeKind.Local).AddTicks(512),
-                            DateUpdated = new DateTime(2023, 11, 24, 11, 2, 22, 920, DateTimeKind.Local).AddTicks(521),
-                            UpdatedBy = "System",
-                            name = "Black"
-                        },
-                        new
-                        {
-                            Id = 2,
-                            CreatedBy = "System",
-                            DateCreated = new DateTime(2023, 11, 24, 11, 2, 22, 920, DateTimeKind.Local).AddTicks(524),
-                            DateUpdated = new DateTime(2023, 11, 24, 11, 2, 22, 920, DateTimeKind.Local).AddTicks(525),
-                            UpdatedBy = "System",
-                            name = "Blue"
-                        });
                 });
 
             modelBuilder.Entity("yy.Shared.Domain.Customer", b =>
@@ -523,26 +506,6 @@ namespace yy.Server.Data.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Makes");
-
-                    b.HasData(
-                        new
-                        {
-                            Id = 1,
-                            CreatedBy = "System",
-                            DateCreated = new DateTime(2023, 11, 24, 11, 2, 22, 920, DateTimeKind.Local).AddTicks(991),
-                            DateUpdated = new DateTime(2023, 11, 24, 11, 2, 22, 920, DateTimeKind.Local).AddTicks(992),
-                            UpdatedBy = "System",
-                            name = "BMW"
-                        },
-                        new
-                        {
-                            Id = 2,
-                            CreatedBy = "System",
-                            DateCreated = new DateTime(2023, 11, 24, 11, 2, 22, 920, DateTimeKind.Local).AddTicks(995),
-                            DateUpdated = new DateTime(2023, 11, 24, 11, 2, 22, 920, DateTimeKind.Local).AddTicks(996),
-                            UpdatedBy = "System",
-                            name = "Toyota"
-                        });
                 });
 
             modelBuilder.Entity("yy.Shared.Domain.Model", b =>
@@ -571,44 +534,6 @@ namespace yy.Server.Data.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Models");
-
-                    b.HasData(
-                        new
-                        {
-                            Id = 1,
-                            CreatedBy = "System",
-                            DateCreated = new DateTime(2023, 11, 24, 11, 2, 22, 920, DateTimeKind.Local).AddTicks(1277),
-                            DateUpdated = new DateTime(2023, 11, 24, 11, 2, 22, 920, DateTimeKind.Local).AddTicks(1279),
-                            UpdatedBy = "System",
-                            name = "3 Series"
-                        },
-                        new
-                        {
-                            Id = 2,
-                            CreatedBy = "System",
-                            DateCreated = new DateTime(2023, 11, 24, 11, 2, 22, 920, DateTimeKind.Local).AddTicks(1281),
-                            DateUpdated = new DateTime(2023, 11, 24, 11, 2, 22, 920, DateTimeKind.Local).AddTicks(1282),
-                            UpdatedBy = "System",
-                            name = "X5"
-                        },
-                        new
-                        {
-                            Id = 3,
-                            CreatedBy = "System",
-                            DateCreated = new DateTime(2023, 11, 24, 11, 2, 22, 920, DateTimeKind.Local).AddTicks(1283),
-                            DateUpdated = new DateTime(2023, 11, 24, 11, 2, 22, 920, DateTimeKind.Local).AddTicks(1284),
-                            UpdatedBy = "System",
-                            name = "Prius"
-                        },
-                        new
-                        {
-                            Id = 4,
-                            CreatedBy = "System",
-                            DateCreated = new DateTime(2023, 11, 24, 11, 2, 22, 920, DateTimeKind.Local).AddTicks(1285),
-                            DateUpdated = new DateTime(2023, 11, 24, 11, 2, 22, 920, DateTimeKind.Local).AddTicks(1286),
-                            UpdatedBy = "System",
-                            name = "Rav4"
-                        });
                 });
 
             modelBuilder.Entity("yy.Shared.Domain.Vehicle", b =>
