@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace yy.Shared.Domain
 {
-    public class Model: BaseDomianinModel
+    public class Model: BaseDomainModel
     {
         public string? name { get; set; }
     }

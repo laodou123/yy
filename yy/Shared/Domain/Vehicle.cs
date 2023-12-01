@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace yy.Shared.Domain
 {
-    public class Vehicle:BaseDomianinModel
+    public class Vehicle:BaseDomainModel
     {
         public int Year { get; set; }
         public string? LicensePlateNumber { get; set; }

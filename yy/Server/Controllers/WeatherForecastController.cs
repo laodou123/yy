@@ -4,7 +4,8 @@ using yy.Shared;
 
 namespace yy.Server.Controllers
 {
-    [Authorize]
+    
+    //[Authorize]
     [ApiController]
     [Route("[controller]")]
     public class WeatherForecastController : ControllerBase

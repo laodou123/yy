@@ -2,7 +2,7 @@
 
 namespace yy.Shared.Domain
 {
-    public class Customer :BaseDomianinModel
+    public class Customer :BaseDomainModel
     {
         public string? DrivingLicense { get; set; }
         public string? Address { get; set; }
