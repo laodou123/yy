@@ -12,7 +12,7 @@ namespace yy.Server.configuration.Entities
                 new Model
                 {
                     Id = 1,
-                    name = "3 Series",
+                    Name = "3 Series",
                     DateCreated = DateTime.Now,
                     DateUpdated = DateTime.Now,
                     CreatedBy = "System",
@@ -21,7 +21,7 @@ namespace yy.Server.configuration.Entities
                  new Model
                  {
                      Id = 2,
-                     name = "X5",
+                     Name = "X5",
                      DateCreated = DateTime.Now,
                      DateUpdated = DateTime.Now,
                      CreatedBy = "System",
@@ -30,7 +30,7 @@ namespace yy.Server.configuration.Entities
                  new Model
                  {
                      Id = 3,
-                     name = "Prius",
+                     Name = "Prius",
                      DateCreated = DateTime.Now,
                      DateUpdated = DateTime.Now,
                      CreatedBy = "System",
@@ -39,7 +39,7 @@ namespace yy.Server.configuration.Entities
                  new Model
                  {
                      Id = 4,
-                     name = "Rav4",
+                     Name = "Rav4",
                      DateCreated = DateTime.Now,
                      DateUpdated = DateTime.Now,
                      CreatedBy = "System",

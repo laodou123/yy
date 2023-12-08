@@ -8,6 +8,6 @@ namespace yy.Shared.Domain
 {
    public  class Make : BaseDomainModel
     {
-        public string? name { get; set; }
+        public string? Name { get; set; }
     }
 }

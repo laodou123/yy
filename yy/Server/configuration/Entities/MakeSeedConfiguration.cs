@@ -12,7 +12,7 @@ namespace yy.Server.configuration.Entities
                 new Make
                 {
                     Id = 1,
-                    name = "BMW",
+                    Name = "BMW",
                     DateCreated = DateTime.Now,
                     DateUpdated = DateTime.Now,
                     CreatedBy = "System",
@@ -21,7 +21,7 @@ namespace yy.Server.configuration.Entities
                  new Make
                  {
                      Id = 2,
-                     name = "Toyota",
+                     Name = "Toyota",
                      DateCreated = DateTime.Now,
                      DateUpdated = DateTime.Now,
                      CreatedBy = "System",
